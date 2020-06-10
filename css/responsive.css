@@ -57,6 +57,7 @@
         right: -18%;
         top: 15%;
         z-index: 99;
+        width: 100%;
     }
 }
 
@@ -71,5 +72,6 @@
         right: -18%;
         top: 15%;
         z-index: 99;
+        width: 100%;
     }
 }
