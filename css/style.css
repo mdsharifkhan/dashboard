@@ -48,7 +48,7 @@ header{
 .login{    
     background-color: #ffffff;
     border-radius: 5px;
-    box-shadow: 0px 0px 8px #888888;
+    box-shadow: 0px 0px 20px rgba(136, 136, 136, 0.6);
     padding: 50px 50px;
 }
 .login h4{
@@ -69,14 +69,15 @@ header{
 .login .form-control{
     border-left: 10px solid #0443c0;
     border-radius: 8px;
-    padding: 30px 50px; 
-    box-shadow: 0px 0px 8px #888888;   
+    padding: 35px 55px; 
+    box-shadow: 0px 0px 9px rgba(66, 119, 224, 0.3);   
 }
 .form-control::placeholder{
     font-style: italic;
     font-size: 16px;
     font-weight: 500;
-    color: #939598;
+    color: #d0d3d3;
+    padding: 0 20px;
 }
 .form-group{
     position: relative;
@@ -106,7 +107,7 @@ header{
 .login .form-icon{
     position: absolute;
     top: 050%;
-    left: 5%;
+    left: 6%;
     font-size: 25px;
     color: #939598;
     transform: translate(0, -50%);
@@ -131,6 +132,7 @@ header{
     color:#ffffff;
     border-radius: 5px;
     font-size: 16px;
+    padding: 17px 40px;
     font-weight: 700;
     text-transform: capitalize;
     text-align: center;
@@ -160,11 +162,11 @@ header{
         font-size: 16px;
         font-weight: 700;
         text-transform: capitalize;
-        background-color: #0343bf;
+        background-color: #0343bd;
         display: block;
         margin: 0 auto;
         padding: 15px 45px;
-        box-shadow: 0px 0px 4px #2d2c2c;
+        box-shadow: 0px 0px 3px #05337e;
 }
 .wlcm-content{
     padding: 275px 0;
@@ -195,7 +197,7 @@ header{
     padding: 0 100px;
     border-left: 10px solid #0343bf;
     border-radius: 8px;
-    box-shadow: 0px 0px 8px #888888; 
+    box-shadow: 0px 0px 9px rgba(66, 119, 224, 0.3);  
     font-size: 16px;
     font-weight: 500;
     font-style: italic;
@@ -218,7 +220,7 @@ header{
     padding: 0 45px;
     border-left: 10px solid #0343bf;
     border-radius: 8px;
-    box-shadow: 0px 0px 8px #888888; 
+    box-shadow: 0px 0px 9px rgba(66, 119, 224, 0.3);
     font-size: 16px;
     font-weight: 500;
     font-style: italic;
@@ -229,7 +231,7 @@ header{
     font-size: 16px;
     font-weight: 400;
     font-style: italic;
-    color: #939598;
+    color: #d0d3d3;
 }
 .next-step .name{
     position: relative;
@@ -237,7 +239,7 @@ header{
 .next-step .first-icon{
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 12%;
     transform: translate(0, -50%);
     font-size: 20px;
     color: #939598;

@@ -33,16 +33,26 @@
         padding: 135px 0;
     }
     .welcome{
-        min-height: 470px;
+        min-height: 490px;
     }
     .welcome .btn{
         padding: 12px 35px;
     }
     .login .form-control{
-        padding: 25px 35px;
+        padding: 28px 44px;
     }
     .form-control::placeholder{
-        font-size: 11px;
+        font-size: 12px;
+    }
+    .welcome p {
+        font-size: 14px;
+    }
+    /* signup page */
+    .next-step .control-icon{
+        left: 10%;
+    }
+    .first-step, .next-step{
+        padding: 60px 100px;
     }
 }
 
