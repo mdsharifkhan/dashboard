@@ -54,6 +54,9 @@
     .first-step, .next-step{
         padding: 60px 100px;
     }
+    .next-step .form-control{
+        padding: 0px 70px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -80,7 +83,7 @@
     .login {
         position: absolute;
         right: -18%;
-        top: 15%;
+        top: 13%;
         z-index: 99;
         width: 100%;
     }
