@@ -1,0 +1,300 @@
+/*
+           Master Stylesheet
+    ============================
+    Template Name :SENZCRAFT
+    Author: MD. NUR NOBI
+    Author Url: https://www.fiverr.com/users/only_nurnobi/
+    Descriptions:
+    Version:1.0.0
+    Tag:
+
+*/
+
+/*
+           Table of Content
+        =====================
+ 1. Typrography
+ 2.
+ 3.
+ 4.
+ 5.
+ 6.
+
+
+
+*/
+
+
+/*=========================
+        Typrography
+===========================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    background-color: #f8f8f8;
+}
+header{
+    margin: 50px 0;
+}
+/*=========================
+        Login
+===========================*/
+#login{
+    margin-bottom: 50px;
+}
+.login{    
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px #888888;
+    padding: 50px 50px;
+}
+.login h4{
+    font-size: 24px;
+    font-weight: 700;
+    color:#464646;
+    text-transform: capitalize;
+}
+.login span{
+    border-bottom: 2px solid;
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+}
+.login form{
+    margin: 30px 0;
+}
+.login .form-control{
+    border-left: 10px solid #0443c0;
+    border-radius: 8px;
+    padding: 30px 50px; 
+    box-shadow: 0px 0px 8px #888888;   
+}
+.form-control::placeholder{
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 500;
+    color: #939598;
+}
+.form-group{
+    position: relative;
+}
+.form-group a{
+    font-size: 16px;
+    font-weight: 600;    
+    color:#464646;
+    border-bottom: 2px solid #464646;
+}
+.form-group a:hover{
+    text-decoration: none;
+}
+.custom-control-label{
+    font-size: 16px;
+    color: #464646;
+    font-weight: 400;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #ec547a;
+    background-color: #ec547a;
+}
+.custom-checkbox .custom-control-label::before{
+    border-radius: 0;
+}
+.login .form-icon{
+    position: absolute;
+    top: 050%;
+    left: 5%;
+    font-size: 25px;
+    color: #939598;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+}
+.login .form-control:focus{
+    outline: none;
+    box-shadow: none;
+}
+.login .btn i{
+    margin-right: 10px;
+}
+.login button{
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-top: 35px;
+}
+.login .btn{
+    background-color: #0443c0;
+    color:#ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+}
+.welcome{
+    background-image: url(../image/login_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+    border-radius: 5px;
+}
+.welcome h4, .welcome p{
+    color: #ffffff;
+}
+.welcome h4{
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.welcome p{
+    margin-bottom: 40px;
+}
+.welcome .btn{
+        color: #ffffff;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: capitalize;
+        background-color: #0343bf;
+        display: block;
+        margin: 0 auto;
+        padding: 15px 45px;
+        box-shadow: 0px 0px 4px #2d2c2c;
+}
+.wlcm-content{
+    padding: 275px 0;
+}
+/*==============================
+        Signup Page Style 
+==============================*/
+.first-step, .next-step{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px #888888; 
+    border-radius: 5px;
+    padding: 60px 200px;
+}
+.first-step h4{
+    font-size: 30px;
+    font-weight: 700;
+    color: #464646;
+    text-transform: capitalize;
+}
+.heading-border{
+    border-bottom: 2px solid #464646;
+    display: block;
+    width: 120px;
+    margin:auto;
+}
+.first-step .custom-select{
+    height: 70px;
+    padding: 0 100px;
+    border-left: 10px solid #0343bf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px #888888; 
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+    color:#939598;
+    margin: 10px 0;
+}
+.first-step .first-icon{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(0, -50%);
+    font-size: 20px;
+    color: #939598;
+}
+.next-step{
+    margin-top: 50px;
+}
+.next-step .form-control{
+    height: 70px;
+    padding: 0 45px;
+    border-left: 10px solid #0343bf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px #888888; 
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+    color:#939598;
+    margin: 10px 0;
+}
+.next-step .form-control::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    color: #939598;
+}
+.next-step .name{
+    position: relative;
+}
+.next-step .first-icon{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+    font-size: 20px;
+    color: #939598;
+}
+.next-step .control-icon{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translate(0, -50%);
+    font-size: 20px;
+    color: #939598;
+}
+.next-step  .btn{
+    font-size: 18px;
+    text-transform: uppercase;
+    height: 60px;
+    width: 200px;
+    font-weight: 700;
+    color:#ffffff;
+    background-color: #0343bf;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+.next-step  .btn:hover{
+    background-color: #084cd0;
+    box-shadow: 0px 0px 8px #888888; 
+    transition: .3s all ease-in-out;
+}
+/*==============================
+        Dashboard Page Style 
+==============================*/
+#dashboard .sideMenu{
+    background-image: url(../image/dashboard_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+}
+.sideMenu .logo a{
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu ul{
+    padding: 0;
+    margin: 0;
+}
+.menu li{
+    list-style: none;
+    padding: 15px 50px;
+    margin: 30px 0;
+    background-color: red;
+}
+.menu li a{
+    color: #ffffff;
+    text-decoration: none;
+}

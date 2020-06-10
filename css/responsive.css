@@ -1,0 +1,72 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+		/* signup page */
+.first-step, .next-step {    
+    padding: 35px 30px;
+}
+.next-step .control-icon {    
+    left: 7%;
+
+}
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	/* signup page */
+.first-step, .next-step {    
+    padding: 35px 30px;
+}
+.next-step .control-icon {    
+    left: 7%;
+
+}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    /* login page */
+    .wlcm-content {
+        padding: 163px 0;
+    }
+    .welcome{
+        min-height: 505px;
+    }
+    .welcome .btn{
+        padding: 10px 40px;
+    }
+    .login .form-control{
+        padding: 25px 35px;
+    }
+    .form-control::placeholder{
+        font-size: 12px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    /* login */
+    #login .row{
+        position: relative;
+    }
+    .login {
+        position: absolute;
+        right: -18%;
+        top: 15%;
+        z-index: 99;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+     /* login */
+     #login .row{
+        position: relative;
+    }
+    .login {
+        position: absolute;
+        right: -18%;
+        top: 15%;
+        z-index: 99;
+    }
+}
