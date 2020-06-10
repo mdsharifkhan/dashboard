@@ -39,7 +39,7 @@
         padding: 12px 35px;
     }
     .login .form-control{
-        padding: 28px 44px;
+        padding: 28px 53px;
     }
     .form-control::placeholder{
         font-size: 12px;
@@ -47,15 +47,21 @@
     .welcome p {
         font-size: 14px;
     }
+    .login .form-icon{
+        margin-left: 12px;
+    }
     /* signup page */
     .next-step .control-icon{
-        left: 10%;
+        left: 5%;
     }
     .first-step, .next-step{
         padding: 60px 100px;
     }
     .next-step .form-control{
         padding: 0px 70px;
+    }
+    .next-step .first-icon{
+        left: 12%;
     }
 }
 
@@ -68,7 +74,7 @@
     .login {
         position: absolute;
         right: -18%;
-        top: 15%;
+        top: 12%;
         z-index: 99;
         width: 100%;
     }
@@ -83,7 +89,7 @@
     .login {
         position: absolute;
         right: -18%;
-        top: 13%;
+        top: 12%;
         z-index: 99;
         width: 100%;
     }

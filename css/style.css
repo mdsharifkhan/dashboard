@@ -69,15 +69,16 @@ header{
 .login .form-control{
     border-left: 10px solid #0443c0;
     border-radius: 8px;
-    padding: 35px 55px; 
+    padding: 35px 67px; 
     box-shadow: 0px 0px 9px rgba(66, 119, 224, 0.3);   
+    height: 77px;
 }
 .form-control::placeholder{
     font-style: italic;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     color: #d0d3d3;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 .form-group{
     position: relative;
@@ -109,6 +110,7 @@ header{
     top: 050%;
     left: 6%;
     font-size: 25px;
+    margin-left: 20px;
     color: #939598;
     transform: translate(0, -50%);
     -webkit-transform: translate(0, -50%);
@@ -134,7 +136,7 @@ header{
     font-size: 16px;
     padding: 17px 40px;
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-align: center;
 }
 .welcome{
@@ -161,12 +163,12 @@ header{
         border-radius: 5px;
         font-size: 16px;
         font-weight: 700;
-        text-transform: capitalize;
-        background-color: #0343bd;
+        text-transform: uppercase;
+        background-color: #0343bf;
         display: block;
         margin: 0 auto;
         padding: 15px 45px;
-        box-shadow: 0px 0px 3px #05337e;
+        box-shadow: 0px 0px 10px #0240a3;
 }
 .wlcm-content{
     padding: 275px 0;
@@ -193,7 +195,7 @@ header{
     margin:auto;
 }
 .first-step .custom-select{
-    height: 70px;
+    height: 77px;
     padding: 0 100px;
     border-left: 10px solid #0343bf;
     border-radius: 8px;
@@ -216,8 +218,8 @@ header{
     margin-top: 50px;
 }
 .next-step .form-control{
-    height: 70px;
-    padding: 0 45px;
+    height: 77px;
+    padding: 0 65px;
     border-left: 10px solid #0343bf;
     border-radius: 8px;
     box-shadow: 0px 0px 9px rgba(66, 119, 224, 0.3);
@@ -239,7 +241,7 @@ header{
 .next-step .first-icon{
     position: absolute;
     top: 50%;
-    left: 12%;
+    left: 14%;
     transform: translate(0, -50%);
     font-size: 20px;
     color: #939598;
@@ -251,6 +253,7 @@ header{
     transform: translate(0, -50%);
     font-size: 20px;
     color: #939598;
+    margin-left: 20px;
 }
 .next-step  .btn{
     font-size: 18px;
