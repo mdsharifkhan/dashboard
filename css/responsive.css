@@ -30,6 +30,12 @@
             padding: 28px 70px;
             height: 65px;
         }
+        .welcome .btn{
+            padding: 12px 34px;
+        }
+        .login .btn{
+            padding: 12px 34px;
+        }
         /* header section */
         .header .input-group {
             width: 100%;
@@ -49,6 +55,12 @@
         .login .form-control{
             padding: 28px 53px;
             height: 65px;
+        }
+        .welcome .btn{
+            padding: 12px 34px;
+        }
+        .login .btn{
+            padding: 12px 34px;
         }
         .first-step .custom-select{
             font-size: 10px;
@@ -83,7 +95,10 @@
         min-height: 520px;
     }
     .welcome .btn{
-        padding: 12px 35px;
+        padding: 12px 34px;
+    }
+    .login .btn{
+        padding: 12px 34px;
     }
     .login .form-control{
         padding: 28px 53px;
