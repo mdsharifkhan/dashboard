@@ -39,6 +39,11 @@ body{
 header{
     margin: 50px 0;
 }
+h4{
+    font-size: 18px;
+    color: #1b76d3;
+    font-weight: 700;
+}
 /*=========================
         Login
 ===========================*/
@@ -78,7 +83,6 @@ header{
     font-size: 16px;
     font-weight: 400;
     color: #d0d3d3;
-    padding: 0 15px;
 }
 .form-group{
     position: relative;
@@ -111,7 +115,7 @@ header{
     left: 6%;
     font-size: 25px;
     margin-left: 20px;
-    color: #939598;
+    color: #d0d3d3;
     transform: translate(0, -50%);
     -webkit-transform: translate(0, -50%);
     -moz-transform: translate(0, -50%);
@@ -224,7 +228,7 @@ header{
     border-radius: 8px;
     box-shadow: 0px 0px 9px rgba(66, 119, 224, 0.3);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     font-style: italic;
     color:#939598;
     margin: 10px 0;
@@ -244,7 +248,7 @@ header{
     left: 14%;
     transform: translate(0, -50%);
     font-size: 20px;
-    color: #939598;
+    color: #d0d3d3;
 }
 .next-step .control-icon{
     position: absolute;
@@ -252,7 +256,7 @@ header{
     left: 3%;
     transform: translate(0, -50%);
     font-size: 20px;
-    color: #939598;
+    color: #d0d3d3;
     margin-left: 20px;
 }
 .next-step  .btn{
@@ -300,7 +304,7 @@ header{
     list-style: none;
     padding: 15px 50px;
     margin: 30px 0;
-    transform: 0.5s all ease-in-out;
+    transition: 0.3s all ease-in-out;
     border-left: 7px solid transparent;
 }
 .menu li:hover{
@@ -324,4 +328,127 @@ header{
 }
 .footer-logo{
     margin-top: 150px;
+}
+/* ==================================
+    style for dashboard
+======================================*/
+.header{
+    padding: 30px 0 15px;
+}
+/* ==================================
+    style for dashboard header
+======================================*/
+
+.header .form-control{
+    height: 60px;
+    padding: 0 80px;
+    box-shadow: 0px 0px 9px rgba(66, 119, 224, 0.3);
+    position: relative; 
+    border-top-right-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+    border-radius: 15px;
+}
+.header .input-group{
+    width: 80%;
+}
+.header .form-control::placeholder{
+    font-size: 16px;
+}
+.header .form-control:focus{
+   outline: none;
+}
+
+.header .input-group-text{
+    background-color: #ffffff;
+    border: none;
+    position: absolute;
+    right: 35px;
+    top: 2px;
+    z-index: 99;
+    height: 56px;
+    border-radius: 5px;
+    cursor: pointer;
+ 
+}
+.header .input-group-text i{
+    line-height: 60px;
+}
+.profile{
+    margin-left: 40px;
+    margin-right: 15px;
+}
+.admin {
+    margin-left: 58%;
+    width: 250px;
+}
+.admin h6{
+    font-size: 16px;
+    line-height: 5px;
+    color: #1c2136;
+    margin-top: 5px;
+}
+.admin div p{
+    font-size: 10px;
+}
+.notification span{
+    font-size: 20px;
+    line-height: 60px;
+}
+/* ==================================
+    style for dashboard header
+======================================*/
+.box-content span{
+    font-size: 24px;
+    color: #ffffff;
+}
+.box-content p{
+    font-size: 9px;
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+}
+.box-icon{
+    color: #013d7b;
+    height: 45px;
+    width: 45px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+.box-icon i{
+    line-height: 45px;
+    text-align: center;
+    display: block;
+}
+
+.box{
+    background-color: #013d7b;
+    width: 190px;
+    height: 95px;
+    border-radius: 10px;
+}
+.box-content{
+   margin-top: 20px;
+   margin-left: 20px;
+}
+.box-2{
+    background-color: #1cc88a;
+    height: 95px;
+    border-radius: 10px;
+}
+.box-3{
+    background-color: #ed904c;
+    height: 95px;
+    border-radius: 10px;
+}
+.box-4{
+    background-color: #11803e;
+    height: 95px;
+    border-radius: 10px;
+}
+.box-5{
+    background-color: #1b76d3;
+    height: 95px;
+    border-radius: 10px;
 }

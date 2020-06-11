@@ -1,26 +1,73 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-		/* signup page */
-.first-step, .next-step {    
-    padding: 35px 30px;
-}
-.next-step .control-icon {    
-    left: 7%;
+        /* signup page */
+        .first-step .custom-select {
+            height: 65px;
+            padding: 0 70px;
+            font-size: 12px;
+        }
+        .first-step, .next-step {    
+            padding: 35px 30px;
+        }
+        .next-step .control-icon {    
+            left: 7%;
 
-}
+        }
+        .next-step .form-control{
+            height: 65px;
+        }
+        .form-control::placeholder{
+            font-size: 11px;
+        }
+        .next-step .form-control::placeholder{
+            font-size: 12px;
+        }
+        /* login form */
+        .welcome{
+            min-height: 520px;
+        }
+        .login .form-control{
+            padding: 28px 70px;
+            height: 65px;
+        }
+        /* header section */
+        .header .input-group {
+            width: 100%;
+        }
+        .admin{
+            margin: auto;
+        }
 
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-	/* signup page */
-.first-step, .next-step {    
-    padding: 35px 30px;
-}
-.next-step .control-icon {    
-    left: 7%;
+      /* login form */
+        .welcome{
+            min-height: 520px;
+        }
+        .login .form-control{
+            padding: 28px 53px;
+            height: 65px;
+        }
+        .first-step .custom-select{
+            font-size: 10px;
+        }
+	    /* signup page */
+        .first-step, .next-step {    
+            padding: 35px 30px;
+        }
+        .next-step .control-icon {    
+            left: 7%;
 
-}
+        }
+        /* header section */
+        .header .input-group {
+            width: 100%;
+        }
+        .admin{
+            margin: auto;
+        }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -33,13 +80,14 @@
         padding: 135px 0;
     }
     .welcome{
-        min-height: 490px;
+        min-height: 520px;
     }
     .welcome .btn{
         padding: 12px 35px;
     }
     .login .form-control{
         padding: 28px 53px;
+        height: 65px;
     }
     .form-control::placeholder{
         font-size: 12px;
@@ -63,6 +111,13 @@
     .next-step .first-icon{
         left: 12%;
     }
+    /* header section */
+    .header .input-group {
+        width: 100%;
+    }
+    .admin {
+        margin-left: 18%;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -77,6 +132,13 @@
         top: 12%;
         z-index: 99;
         width: 100%;
+    }
+    .form-control::placeholder{
+        font-size: 12px;
+    }
+    /* header */
+    .admin {
+        margin-left: 35%;
     }
 }
 
