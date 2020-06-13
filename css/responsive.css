@@ -52,12 +52,10 @@
             font-weight: 600;
         }
         .menu li {
-          
-            padding: 15px 13px;
-           
+            padding: 15px 13px;        
         }
         #setup .button button:first-child, #setup .button button:last-child{
-            width: 110px;
+            width: 103px;
             height: 45px;
             font-size: 12px;
         }
@@ -76,6 +74,35 @@
         #setup .mt-4{
             margin: 0 !important;
         }
+        #setup .first-icon {
+            left: 16%;
+        }
+          /* add Docs */
+          .addDoc p{
+            font-size: 12px;
+        }
+        .addDoc .btn-primary{
+            width: 125px;
+            height: 45px;
+        }
+        .upload .addDoc{
+            padding: 20px 20px;
+        }
+         /* table */
+    #table .custom-select{
+        width: 137px;
+    }
+    /* pagination */
+    .page-link{
+        padding: 10px 10px;
+    }
+    .pArea {
+        width: 275px;
+    }
+    .table td {
+        font-size: 12px;
+        padding: 20px 0;
+    }
 
 }
 
@@ -134,6 +161,29 @@
         .menu li {
             padding: 15px 40px;        
         }
+        /* add Docs */
+        .addDoc p{
+            font-size: 12px;
+        }
+        .addDoc .btn-primary{
+            width: 140px;
+            height: 45px;
+        }
+         /* table */
+    #table .custom-select{
+        width: 137px;
+    }
+    .table td {
+        font-size: 14px;
+        padding: 25px 0;
+    }
+    /* pagination */
+    .page-link{
+        padding: 10px 18px;
+    }
+    .pArea {
+        width: 385px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -203,6 +253,14 @@
         width: 165px;
         height: 50px
     }
+     /* table */
+     #table .custom-select{
+        width: 137px;
+    }
+    .table td {
+        font-size: 14px;
+        padding: 25px 0;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -224,6 +282,10 @@
     /* header */
     .admin {
         margin-left: 35%;
+    }
+    /* table */
+    #table .custom-select{
+        width: 137px;
     }
 }
 
