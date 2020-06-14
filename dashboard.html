@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <!-- required css file end -->
+    <link rel="stylesheet" href="css/jquery.listtopie.css">
     
     <title>Senzcraft || Dashboard</title>
 </head>
@@ -185,12 +186,25 @@
                         <h4>Tracking & Collision Avoidance</h4>
                         <div class="row">
                             <div class="col-lg-3">
-                                <div class="pieChart">
-                                    
+                                <div class="chartArea">
+                                    <div class="pieChart">
+                                        <div id="static">
+                                            <div data-lcolor="#7639d5">12.5</div>
+                                            <div data-lcolor="#f82667">25</div>
+                                            <div data-lcolor="#1399d8">37.5</div>
+                                            <div data-lcolor="#ff9c01">25</div>
+                                          </div>
+                                          <p>Total Docs Uploaded</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-3">
-
+                                <div class="chartArea">
+                                    <div class="pieChart">
+                                        <div class="js-gauge js-gauge--2 gauge"></div>
+                                        <p>Total Docs Uploaded</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-lg-3">
 
@@ -207,6 +221,7 @@
     </div>
     <!-- required js file strat -->
     <!-- <script src="js/jquery-3.4.1.min.js"></script> -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>    
@@ -214,6 +229,70 @@
     <script src="js/script.js"></script>
 
     <!-- required js file end -->  
+
+    <!-- first pie chart -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+<script src="js/jquery.listtopie.min.js"></script>
+   <!-- second pie chart -->
+
+
+
+	<script type="text/javascript" src="js/kuma-gauge.jquery.js"></script>
+
+
+    <script>
+        $('.js-gauge--1').kumaGauge({
+            value : Math.floor((Math.random() * 99) + 1)
+        });
+
+        $('.js-gauge--1').kumaGauge('update', {
+            value : Math.floor((Math.random() * 99) + 1)
+        });
+
+        $('.js-gauge--2').kumaGauge({
+            value : Math.floor((Math.random() * 99) + 1),
+            fill : '#F34A53',
+            gaugeBackground : '#1E4147',
+            gaugeWidth : 10,
+            showNeedle : false,
+            label : {
+                display : true,
+                left : 'Min',
+                right : 'Max',
+                fontFamily : 'Helvetica',
+                fontColor : '#1E4147',
+                fontSize : '11',
+                fontWeight : 'bold'
+            }
+        });
+
+
+        var update = setInterval(function() {
+            var newVal = Math.floor((Math.random() * 99) + 1);
+            $('.js-gauge--1').kumaGauge('update',{
+                value : newVal
+            });		
+        }, 1000);
+    </script><script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-36251023-1']);
+_gaq.push(['_setDomainName', 'jqueryscript.net']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+</script>
+
+
+
+
+
+
     
 </body>
 </html>

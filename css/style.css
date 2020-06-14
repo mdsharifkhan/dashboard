@@ -46,6 +46,9 @@ h4{
     color: #1b76d3;
     font-weight: 700;
 }
+.logo{
+    padding: 65px 0;
+}
 /*=========================
         Login
 ===========================*/
@@ -476,6 +479,33 @@ h4{
     height: 95px;
     border-radius: 10px;
 }
+/* style for dashboard avoidance{pie chart} section */
+
+.chartArea{
+    height: 320px;
+    width: 260px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #cbdddd;
+}
+.chartArea p{
+    text-align: center;
+    margin: 15px 0;
+    font-size: 16px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

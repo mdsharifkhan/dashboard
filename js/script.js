@@ -38,4 +38,61 @@ $(document).ready(function(){
 
 
 
+  // for first pie chart JS
+  
+  $(document).ready(function(){
     
+  
+    
+    $('#static').listtopie({
+      startAngle:0,
+      strokeWidth:0,
+        hoverEvent:false,
+        drawType:'round',
+        speedDraw:150,
+        hoverColor:'#ffffff',
+        textColor:'#ffffff',
+        strokeColor:'#ffffff',
+        textSize:'18',
+        hoverAnimate:true,
+        marginCenter:1,
+        sectorRotate:true,
+        easingType:mina.bounce,
+        infoText:true,
+    });
+    $('.donut').listtopie({
+      startAngle:270,
+      strokeWidth:5,
+        hoverEvent:true,
+        hoverBorderColor:'#2a363b',
+        hoverAnimate:false,
+        drawType:'round',
+        speedDraw:150,
+        hoverColor:'#ffffff',
+        textColor:'#ffffff',
+        strokeColor:'#ffffff',
+        textSize:'14',
+        hoverAnimate:true,
+        marginCenter:50,
+  
+    });
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+});
