@@ -10,16 +10,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <!-- required css file end -->
+    <link rel="stylesheet" href="css/simple-sidebar.css">
     
     <title>Senzcraft || Setup</title>
 </head>
 <body>
-    <!--===============================
-            Side Menu Start Here
-    ================================ -->
     <div id="dashboard">
-        <div class="row">
-            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-3">
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar -->
+            <div class="bg-light border-right" id="sidebar-wrapper">
                 <div class="sideMenu">
                     <div class="logo">
                         <a href="#" class="d-block text-center">Senzcraft</a>
@@ -56,18 +55,18 @@
                    
                 </div>
             </div>
-    <!--===============================
-            Setup Area Start Here
-    ================================ -->
-            <div class="col-xl-10 col-lg-10 col-md-9 col-sm-9 col-9">
-                <!-- ===============================
+            <!-- /#sidebar-wrapper -->
+        
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                       <!-- ===============================
                     Header area start Here
                 ================================ -->
                 <div class="header">
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                
+                                <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                                 <div class="admin nav">
@@ -186,12 +185,14 @@
                         </div>                       
                     </div>
                 </div>
-
-                
-
             </div>
-        </div>
-    </div>
+            <!-- /#page-content-wrapper -->
+          </div>
+       </div>
+
+
+
+
     <!-- required js file strat -->
     <!-- <script src="js/jquery-3.4.1.min.js"></script> -->
     <script src="js/jquery-3.4.1.min.js"></script>

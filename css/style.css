@@ -289,9 +289,12 @@ h4{
     background-position: center;
     background-size: cover;
     padding: 50px 0;
+    width: 240px;
+    display: table-cell;
 }
 .sideMenu .logo{
-    margin-bottom: 100px;
+    margin-bottom: 60px;
+    padding: 20px 0;
 }
 .sideMenu .logo a{
     font-size: 17px;
@@ -308,7 +311,7 @@ h4{
 .menu li{
     list-style: none;
     padding: 15px 50px;
-    margin: 30px 0;
+    margin: 10px 0;
     transition: 0.3s all ease-in-out;
     border-left: 7px solid transparent;
 }
