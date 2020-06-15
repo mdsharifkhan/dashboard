@@ -11,63 +11,67 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- required css file end -->
     <link rel="stylesheet" href="css/jquery.listtopie.css">
+       <!-- required css file end -->
+       <link rel="stylesheet" href="css/simple-sidebar.css">
     
     <title>Senzcraft || Dashboard</title>
 </head>
 <body>
-    <!--===============================
-            Side Menu Start Here
-    ================================ -->
     <div id="dashboard">
-        <div class="row">
-            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-3">
-                <div class="sideMenu">
-                    <div class="logo">
-                        <a href="#" class="d-block text-center">Senzcraft</a>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sideMenu">
+                <div class="logo">
+                    <a href="#" class="d-block text-center">Senzcraft</a>
+                </div>
+                <div class="menu">
+                    <div class="main">
+                         <ul class="text-center">
+                            <li><a href="#">Main</a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Menu"><i class="fas fa-home"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Plus"><i class="fas fa-plus"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="File"><i class="fas fa-file-alt"></i></a></li>
+                        </ul>
                     </div>
-                    <div class="menu">
-                        <div class="main">
-                             <ul class="text-center">
-                                <li><a href="#">Main</a></li>
-                                <li><a href="#" data-toggle="tooltip" data-placement="top" title="Menu"><i class="fas fa-home"></i></a></li>
-                                <li><a href="#" data-toggle="tooltip" data-placement="top" title="Plus"><i class="fas fa-plus"></i></a></li>
-                                <li><a href="#" data-toggle="tooltip" data-placement="top" title="File"><i class="fas fa-file-alt"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="main">
-                            <ul class="text-center">
-                               <li><a href="#">Help</a></li>
-                               <li><a href="#" data-toggle="tooltip" data-placement="top" title="Setting"><i class="fas fa-cog"></i></a></li>
-                               <li><a href="#" data-toggle="tooltip" data-placement="top" title="User"><i class="fas fa-users"></i></a></li>
-                               <li><a href="#" data-toggle="tooltip" data-placement="top" title="Logout"><i class="fas fa-power-off"></i></a></li>
-                           </ul>
-                       </div>
-                    </div>
-                    <div class="footer-logo">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                    <div class="logo text-center">
-                                        <img src="image/footer.png" alt="logo" class="img-fluid">
-                                    </div>
+                    <div class="main">
+                        <ul class="text-center">
+                           <li><a href="#">Help</a></li>
+                           <li><a href="#" data-toggle="tooltip" data-placement="top" title="Setting"><i class="fas fa-cog"></i></a></li>
+                           <li><a href="#" data-toggle="tooltip" data-placement="top" title="User"><i class="fas fa-users"></i></a></li>
+                           <li><a href="#" data-toggle="tooltip" data-placement="top" title="Logout"><i class="fas fa-power-off"></i></a></li>
+                       </ul>
+                   </div>
+                </div>
+                <div class="footer-logo">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="logo text-center">
+                                    <img src="image/footer.png" alt="logo" class="img-fluid">
                                 </div>
                             </div>
                         </div>
                     </div>
-                   
                 </div>
+               
             </div>
-    <!--===============================
-            Dashboard Start Here
-    ================================ -->
-            <div class="col-xl-10 col-lg-10 col-md-9 col-sm-9 col-9">
-                <!-- ===============================
+        </div>
+        <!-- /#sidebar-wrapper -->
+    
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+             <!-- ===============================
                     Header area start Here
                 ================================ -->
                 <div class="header">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                                <button class="btn btn-primary" id="menu-toggle"><i class="fas fa-bars"></i></button>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+                                
                                 <div class="input-group mb-3">
                                     <input type="text" class="form-control" placeholder="Search here" aria-label="Search here" aria-describedby="basic-addon2">
                                     <div class="input-group-append">
@@ -75,8 +79,8 @@
                                     </div>
                                   </div>
                             </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                <div class="admin nav">
+                            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+                                <div class="admin nav crossMargin">
                                     <div class="notification">
                                         <a href="#">
                                             <span><i class="far fa-bell"></i></span>
@@ -202,23 +206,67 @@
                                 <div class="chartArea">
                                     <div class="pieChart">
                                         <div class="js-gauge js-gauge--2 gauge"></div>
-                                        <p>Total Docs Uploaded</p>
+                                        <p class="mCustom">Processed Validation</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-3">
-
+                                <div class="chartArea">
+                                    <div class="pieChart">
+                                        <div id="demo-pie-1" class="pie-title-center" data-percent="45"> <span class="pie-value"></span> </div>
+                                        <p style="margin-top: 60px;">Processed Validation</p>
+                                    </div>
+                                </div>
+                                
                             </div>
                             <div class="col-lg-3">
 
                             </div>
+                            <!-- another row -->
+                            <div class="col-lg-3">
+                                <div class="chartArea">
+                                    <div class="pieChart">
+                                        <div id="static2">
+                                            <div data-lcolor="#006c6e">12.5</div>
+                                            <div data-lcolor="#fa6d42">25</div>
+                                            <div data-lcolor="#36b9cc">37.5</div>
+                                            <div data-lcolor="#1cc88a">25</div>
+                                          </div>
+                                          <p>Total Docs Uploaded</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="chartArea">
+                                    <div class="pieChart">
+                                        <div class="js-gauge js-gauge--3 gauge"></div>
+                                        <p class="mCustom">Processed Validation</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="chartArea">
+                                    <div class="pieChart">
+                                        <div id="demo-pie-2" class="pie-title-center" data-percent="45"> <span class="pie-value"></span> </div>
+                                        <p style="margin-top: 60px;">Processed Validation</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-lg-3">
+
+                            </div>
+
                         </div>
                     </div>
                 </div>
-
-            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
         </div>
     </div>
+
+
+
     <!-- required js file strat -->
     <!-- <script src="js/jquery-3.4.1.min.js"></script> -->
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
@@ -234,59 +282,61 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
 <script src="js/jquery.listtopie.min.js"></script>
    <!-- second pie chart -->
-
-
-
-	<script type="text/javascript" src="js/kuma-gauge.jquery.js"></script>
-
+    <script type="text/javascript" src="js/kuma-gauge.jquery.js"></script>
+    <!-- third pie chart -->
+    <script src="js/pie-chart.js" type="text/javascript"></script>
 
     <script>
-        $('.js-gauge--1').kumaGauge({
-            value : Math.floor((Math.random() * 99) + 1)
-        });
-
-        $('.js-gauge--1').kumaGauge('update', {
-            value : Math.floor((Math.random() * 99) + 1)
-        });
-
-        $('.js-gauge--2').kumaGauge({
-            value : Math.floor((Math.random() * 99) + 1),
-            fill : '#F34A53',
-            gaugeBackground : '#1E4147',
-            gaugeWidth : 10,
-            showNeedle : false,
-            label : {
-                display : true,
-                left : 'Min',
-                right : 'Max',
-                fontFamily : 'Helvetica',
-                fontColor : '#1E4147',
-                fontSize : '11',
-                fontWeight : 'bold'
-            }
-        });
+          // script for second pie chart
 
 
-        var update = setInterval(function() {
-            var newVal = Math.floor((Math.random() * 99) + 1);
-            $('.js-gauge--1').kumaGauge('update',{
-                value : newVal
-            });		
-        }, 1000);
-    </script><script type="text/javascript">
+$('.js-gauge--2').kumaGauge({
+    value : Math.floor((Math.random() * 99) + 1),
+    fill : '#0047f7',
+    gaugeBackground : '#3f3f3f',
+    gaugeWidth : 40,
+    showNeedle : false,
+    label : {
+        display : true,
+        left : '0',
+        right : '100',
+        fontFamily : 'Helvetica',
+        fontColor : '#1E4147',
+        fontSize : '11',
+        fontWeight : 'bold'
+    }
+});
 
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-36251023-1']);
-_gaq.push(['_setDomainName', 'jqueryscript.net']);
-_gaq.push(['_trackPageview']);
 
-(function() {
-var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
+    </script>
+
+
+<script>
+    // script for second pie chart
+
+
+
+$('.js-gauge--3').kumaGauge({
+value : Math.floor((Math.random() * 99) + 1),
+fill : '#fa6d42',
+gaugeBackground : '#3f3f3f',
+gaugeWidth : 40,
+showNeedle : false,
+label : {
+  display : true,
+  left : '0',
+  right : '100',
+  fontFamily : 'Helvetica',
+  fontColor : '#1E4147',
+  fontSize : '11',
+  fontWeight : 'bold'
+}
+});
 
 </script>
+
+
+
 
 
 
