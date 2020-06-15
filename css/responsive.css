@@ -272,6 +272,9 @@
     .header .input-group {
         width: 100%;
     }
+    .header .form-control {
+        padding: 0 30px;
+    }
     .admin {
         margin-left: 18%;
     }
