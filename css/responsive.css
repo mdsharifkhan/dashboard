@@ -48,7 +48,7 @@
             font-size: 8px;
         }
         .sideMenu .logo a {
-            font-size: 11px;
+            font-size: 17px;
             font-weight: 600;
         }
         .menu li {
@@ -80,10 +80,13 @@
           /* add Docs */
           .addDoc p{
             font-size: 12px;
+            text-align: center;
         }
         .addDoc .btn-primary{
             width: 125px;
             height: 45px;
+            margin: auto;
+            display: block;
         }
         .upload .addDoc{
             padding: 20px 20px;
@@ -102,6 +105,31 @@
     .table td {
         font-size: 12px;
         padding: 20px 0;
+    }
+      /* for dashboard */
+      .box {
+        margin-bottom: 25px;
+    }
+    .crossMargin {
+        margin-left: 22% !important;
+    }
+    #dashboard .sideMenu {
+        display: table;
+    }
+    button#menu-toggle {
+        margin-bottom: 20px;
+    }
+    .box {
+        width: 100%;
+    }
+    .chartArea {
+        margin: auto;
+    }
+    .chartArea{
+        margin-bottom: 25px;
+    }
+    .mt-5{
+        margin-top: 0 !important;
     }
 
 }
@@ -184,10 +212,20 @@
     .pArea {
         width: 385px;
     }
+      /* for dashboard */
+      .box {
+        margin-bottom: 25px;
+    }
+    .crossMargin {
+        margin-left: 0 !important;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
+    .menu li {
+        padding: 20px 50px;
+    }
     /* login page */
     .login{
         padding: 48px 20px;
@@ -196,7 +234,7 @@
         padding: 135px 0;
     }
     .welcome{
-        min-height: 520px;
+        min-height: 475px;
     }
     .welcome .btn{
         padding: 12px 34px;
@@ -260,6 +298,19 @@
     .table td {
         font-size: 14px;
         padding: 25px 0;
+    }
+    /* for dashboard */
+    .box {
+        margin-bottom: 25px;
+    }
+    .crossMargin {
+        margin-left: 0 !important;
+    }
+    .chartArea {
+        margin-bottom: 30px;
+    }
+    .mt-5{
+        margin-top: 0 !important;
     }
 }
 
